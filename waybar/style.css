@@ -1,37 +1,37 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "MesloLGS Nerd Font";
-    font-size: 13px;
+    font-family: FiraCode Nerd Font;
+    font-size: 15px;
     min-height: 0;
 }
 
 window#waybar {
-    background: transparent;
+    background: #2E3440;
     color: #D8DEE9;
 }
 
 #workspaces button {
-    font-weight: bold;
-    padding: 0 5px;
     background: transparent;
-    color: white;
-    border-top: 2px solid transparent;
+    border-radius: 0;
+    padding: 0;
 }
 
 #workspaces button.focused {
+    font-weight: bold;
     color: #8FBCBB;
     background: #3B4252;
 }
 
 #mode {
-    background: #64727D;
-    border-bottom: 3px solid white;
+    font-weight: bold;
+    color: #8FBCBB;
+    background: #3B4252;
 }
 
-#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
+#battery, #cpu, #memory, #network, #pulseaudio, #custom-keyboard-layout, #tray, #mode, #custom-power  {
     padding: 0 3px;
-    margin: 0 2px;
+    margin: 0 5px;
 }
 
 #clock {
@@ -49,6 +49,11 @@ window#waybar {
     color: #A3BE8C;
 }
 
+#battery.warning {
+    color: #EBCB8B;
+}
+
+
 #cpu {
 }
 
@@ -60,6 +65,14 @@ window#waybar {
 
 #network.disconnected {
     background: #BF616A;
+}
+
+#backlight {
+    padding-right: 5px;
+}
+
+#backlight.icon {
+    padding-left: 5px;
 }
 
 #pulseaudio {
